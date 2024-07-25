@@ -1,0 +1,45 @@
+/* Container styling */
+.clinic-registration-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensures padding and border are included in the max-width calculation */
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: calc(100% - 16px); /* Adjust width to account for padding and border */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate from the last input field */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

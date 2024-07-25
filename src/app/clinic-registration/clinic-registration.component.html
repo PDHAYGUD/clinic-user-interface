@@ -1,0 +1,38 @@
+<!-- src/app/clinic-registration/clinic-registration.component.html -->
+
+<div class="clinic-registration-container">
+  <h2>Register Your Clinic</h2>
+
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="clinic_name">Clinic Name:</label>
+      <input type="text" id="clinic_name" class="form-control" [(ngModel)]="clinic.clinic_name" name="clinic_name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="id">ID:</label>
+      <input type="number" id="id" class="form-control" [(ngModel)]="clinic.id" name="id" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control" [(ngModel)]="clinic.password" name="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input type="text" id="location" class="form-control" [(ngModel)]="clinic.location" name="location" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact_number">Contact Number:</label>
+      <input type="text" id="contact_number" class="form-control" [(ngModel)]="clinic.contact_number" name="contact_number" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <!-- Display success message -->
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+</div>
